@@ -1,5 +1,5 @@
 //Alex X
-//2016 J5
+//2016 J5/S2
 //https://www.cemc.uwaterloo.ca/contests/computing/2016/stage%201/juniorEn.pdf
 //15/15
 package com.company;
