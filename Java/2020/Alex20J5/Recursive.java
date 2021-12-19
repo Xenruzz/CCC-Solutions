@@ -1,8 +1,9 @@
 //Alex
 //2020 J5
 //https://cemc.uwaterloo.ca/contests/computing/2020/ccc/juniorEF.pdf
-//4/15 
-//Recursive Method = StackOverFlow
+//13/15 
+//Recursive Method
+//TLE (and clipped output???) at Batch #7 Case #6
 
 package com.company;
 
@@ -47,6 +48,7 @@ public class Main {
         int y = current.y;
 
         int value = values[x - 1][y - 1];
+        if (passed[x - 1][y - 1]) return false;
         passed[x - 1][y - 1] = true;
 
         ArrayList<Point> points = keys.getOrDefault(value, null);
