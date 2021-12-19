@@ -1,5 +1,5 @@
 //Alex
-//2020 J5
+//2020 J5/S1
 //https://cemc.uwaterloo.ca/contests/computing/2020/ccc/juniorEF.pdf
 //13/15 
 //Recursive Method
