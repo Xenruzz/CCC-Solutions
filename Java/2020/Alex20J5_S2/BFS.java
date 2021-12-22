@@ -1,5 +1,5 @@
 //Alex
-//2020 J5/S1
+//2020 J5/S2
 //https://cemc.uwaterloo.ca/contests/computing/2020/ccc/juniorEF.pdf
 //?/15 (1/15 on CCC Grader, 6/15 on DMOJ Grader)
 //Random Error's and Wrong Output's even though I manually tested it????
