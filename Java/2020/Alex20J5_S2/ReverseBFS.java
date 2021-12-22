@@ -1,5 +1,5 @@
 //Alex
-//2020 J5
+//2020 J5/S2
 //https://cemc.uwaterloo.ca/contests/computing/2020/ccc/juniorEF.pdf
 //11/15
 
