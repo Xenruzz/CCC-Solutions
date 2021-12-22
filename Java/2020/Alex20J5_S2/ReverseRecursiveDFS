@@ -1,0 +1,67 @@
+//Alex
+//2020 J5/S2
+//https://cemc.uwaterloo.ca/contests/computing/2020/ccc/juniorEF.pdf
+//15/15
+
+package com.company;
+
+import java.util.*;
+import java.io.*;
+
+public class Main {
+
+    static class Point {
+        int r, c;
+
+        public Point(int r, int c) {
+            this.r = r;
+            this.c = c;
+
+        }
+    }
+
+    public static void main(String[] args) throws IOException {
+        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+
+        int num_rows = Integer.parseInt(br.readLine());
+        int num_cols = Integer.parseInt(br.readLine());
+
+        HashMap<Integer, ArrayList<Point>> value_points_map = new HashMap<>();
+
+        for (int i = 0; i < num_rows; i++) {
+            StringTokenizer st = new StringTokenizer(br.readLine());
+
+            for (int j = 0; j < num_cols; j++) {
+                int num = Integer.parseInt(st.nextToken());
+                ArrayList<Point> temp = value_points_map.getOrDefault(num, new ArrayList<>());
+                temp.add(new Point(i, j));
+                value_points_map.put(num, temp);
+
+            }
+        }
+
+        boolean bool = recurse(new Point(num_rows - 1, num_cols -1), value_points_map, new boolean[num_rows][num_cols]);
+        if (bool) System.out.println("yes");
+        else System.out.println("no");
+    }
+
+    public static boolean recurse(Point current_point, HashMap<Integer, ArrayList<Point>> value_points_map, boolean[][] marked) {
+        int r = current_point.r;
+        int c = current_point.c;
+
+        if (r == 0 && c == 0) return true;
+
+        if (marked[r][c]) return false;
+        marked[r][c] = true;
+
+        ArrayList<Point> points = value_points_map.getOrDefault((r + 1) * (c + 1), new ArrayList<>());
+
+        for (Point p: points) {
+            boolean bool = recurse(p, value_points_map, marked);
+            if (bool) return true;
+
+        }
+
+        return false;
+    }
+}
