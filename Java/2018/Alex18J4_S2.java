@@ -1,5 +1,5 @@
 //Alex
-//2018 J4
+//2018 J4/S2
 //https://cemc.uwaterloo.ca/contests/computing/2018/stage%201/juniorEF.pdf
 //15/15
 
