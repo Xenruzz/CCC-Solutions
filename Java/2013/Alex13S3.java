@@ -1,7 +1,7 @@
 //Alex
 //2013 S3
 //https://cemc.uwaterloo.ca/contests/computing/2013/stage1/seniorEn.pdf
-//60/80 (DMOJ) (Incomplete - To Be Reviewed)
+//80/80 (thanks to charles)
 
 package com.company;
 
@@ -101,13 +101,13 @@ public class Main {
         for (int i = 1; i < 4; i++) {
             if (scores[i] > scores[highest]) {
                 highest = i;
-                highest_count = 1;
+                highest_count = 0;
             }
             else if (scores[i] == scores[highest]) highest_count++;
 
         }
 
-        if (highest_count == 1) return highest;
+        if (highest_count == 0) return highest;
         return -1;
     }
 }
