@@ -102,9 +102,7 @@ public class Main {
             if (scores[i] > scores[highest]) {
                 highest = i;
                 highest_count = 0;
-            }
-            else if (scores[i] == scores[highest]) highest_count++;
-
+            } else if (scores[i] == scores[highest]) highest_count++;
         }
 
         if (highest_count == 0) return highest;
