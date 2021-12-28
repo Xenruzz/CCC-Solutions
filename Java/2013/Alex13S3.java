@@ -1,7 +1,7 @@
 //Alex
 //2013 S3
 //https://cemc.uwaterloo.ca/contests/computing/2013/stage1/seniorEn.pdf
-//50/80 (DMOJ) (Incomplete - To Be Reviewed)
+//60/80 (DMOJ) (Incomplete - To Be Reviewed)
 
 package com.company;
 
@@ -97,12 +97,17 @@ public class Main {
 
     public static int winning_team(int[] scores) {
         int highest = 0;
+        int highest_count = 0;
         for (int i = 1; i < 4; i++) {
-            if (scores[i] > scores[highest]) highest = i;
-            else if (scores[i] == scores[highest]) return -1;
+            if (scores[i] > scores[highest]) {
+                highest = i;
+                highest_count = 1;
+            }
+            else if (scores[i] == scores[highest]) highest_count++;
 
         }
 
-        return highest;
+        if (highest_count == 1) return highest;
+        return -1;
     }
 }
