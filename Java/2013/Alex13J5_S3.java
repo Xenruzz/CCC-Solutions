@@ -1,5 +1,5 @@
 //Alex
-//2013 S3
+//2013 J5/S3
 //https://cemc.uwaterloo.ca/contests/computing/2013/stage1/seniorEn.pdf
 //80/80 (thanks to charles)
 
