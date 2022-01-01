@@ -1,7 +1,7 @@
 //Alex
 //2020 S4
 //https://cemc.uwaterloo.ca/contests/computing/2020/ccc/seniorEF.pdf
-//8/15
+//8/15 (WA Batch #3 Case #1 and WA Batch #4 Case #3)
 
 package com.company;
 
