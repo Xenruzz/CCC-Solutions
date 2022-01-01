@@ -1,7 +1,7 @@
 //Alex
 //2020 S4
 //https://cemc.uwaterloo.ca/contests/computing/2020/ccc/seniorEF.pdf
-//8/15 (WA Batch #3 Case #1 and WA Batch #4 Case #3)
+//15/15
 
 package com.company;
 
@@ -52,6 +52,14 @@ public class Main {
         count_letters(input);
 
         int count_abc = sliding_panel('A', 'B', 'C', input);
+
+        section_1.put('A', 0);
+        section_2.put('A', 0);
+        section_1.put('B', 0);
+        section_2.put('B', 0);
+        section_1.put('C', 0);
+        section_2.put('C', 0);
+
         int count_cba = sliding_panel('C', 'B', 'A', input);
 
         System.out.println(Math.min(count_abc, count_cba));
