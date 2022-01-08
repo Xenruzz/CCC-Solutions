@@ -133,7 +133,7 @@ public class Main {
 
         }
 
-        queue.add(new Path(4, 0));
+        queue.add(new Path(n, 0));
         w_dist[n] = 0;
 
         while (!queue.isEmpty()) {
