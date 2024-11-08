@@ -1,4 +1,4 @@
-# ccc_sigma_grind
+# ccc_solutions
 
 CCC solutions for reasonably difficult questions {J4/5, Senior Questions)
 
